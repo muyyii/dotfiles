@@ -6,6 +6,10 @@
 """""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""
+" TODO:
+" investigar bitstream vera como una posible fuente para terminal
+" https://en.wikipedia.org/wiki/Bitstream_Vera
+
 
 filetype plugin on
 
@@ -55,6 +59,10 @@ augroup nord-theme-overrides
 	" Use 'nord7' as foreground color for Vim comment titles.
 	autocmd ColorScheme nord highlight vimCommentTitle ctermfg=14 guifg=#8FBCBB
 augroup END
+" esto de arriba hace lo siguiente, colorea comentarios 
+" TODO:
+" FIXME:
+" Solo comentarios específicos 
 
 colorscheme nord
 
