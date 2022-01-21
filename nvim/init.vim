@@ -39,8 +39,14 @@ set shiftwidth=4
 
 set linebreak
 
-set scrolloff=16    " me encanta, lineas máximas arriba o abajo del cursor 
+set scrolloff=16    " Me encanta, lineas máximas arriba o abajo del cursor 
 set mouse=a  
+
+set nocompatible    " Troubleshoot nord in alacritty and setting termguicolors 
+if (has("termguicolors"))
+	set termguicolors
+endif
+
 
 " Color Schemes
 " nord-theme-overrides
@@ -51,6 +57,9 @@ augroup nord-theme-overrides
 augroup END
 
 colorscheme nord
+
+
+
 
 " Diccionario, corrector ortográfico.
 autocmd FileType markdown,tex,latex set spell! 
