@@ -9,7 +9,9 @@
 " TODO:
 " investigar bitstream vera como una posible fuente para terminal
 " https://en.wikipedia.org/wiki/Bitstream_Vera
-
+" investigar treesitter como sintax highlight
+"
+" ORDENAR EL DOCUMENTO!!!
 
 filetype plugin on
 
@@ -28,9 +30,28 @@ Plug 'lervag/vimtex'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tikhomirov/vim-glsl'
 
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'lukas-reineke/indent-blankline.nvim'
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " Initialize plugin system
 call plug#end()
 
+" Plugin Configuration
+" source ~/.config/nvim/plug-config/lsp-config.vim
+" TODO: investigar esto 
+luafile ~/.config/nvim/lua/plugins/nvim-cmp.lua
+
+" Configuration for Indent Blankline 
+luafile ~/.config/nvim/lua/plugins/indent-blankline.lua
 
 " Elemental items:
 "
@@ -65,8 +86,6 @@ augroup END
 " Solo comentarios específicos 
 
 colorscheme nord
-
-
 
 
 " Diccionario, corrector ortográfico.
