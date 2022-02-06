@@ -25,10 +25,12 @@ call plug#begin()
 " Make sure you use single quotes
 
 " Using a non-default branch
-Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
-Plug 'lervag/vimtex'
 Plug 'arcticicestudio/nord-vim'
+
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'tikhomirov/vim-glsl'
+Plug 'rust-lang/rust.vim'
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -37,10 +39,10 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
-Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'lervag/vimtex'
 
 " Initialize plugin system
 call plug#end()
@@ -74,6 +76,9 @@ endif
 
 
 " Color Schemes
+
+
+
 " nord-theme-overrides
 augroup nord-theme-overrides
 	autocmd!
@@ -85,6 +90,7 @@ augroup END
 " FIXME:
 " Solo comentarios específicos 
 
+" All configuration variables must be set before the colorscheme activation command!
 colorscheme nord
 
 
@@ -98,7 +104,6 @@ set spellfile=~/.config/nvim/spell/diccionario.utf-8.add
 " [s anterior palabra con faltas
 " zw marca malas palabras
 " z= muestra listado de palabras recomendadas 
-
 
 " Key_maps
 runtime first_keymap.vim
