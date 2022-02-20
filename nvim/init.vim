@@ -5,6 +5,9 @@
 
 """""""""""""""""""""""""""""""
 
+let mapleader = ' '
+
+
 """""""""""""""""""""""""""""""
 " TODO:
 " investigar bitstream vera como una posible fuente para terminal
@@ -74,10 +77,7 @@ if (has("termguicolors"))
 	set termguicolors
 endif
 
-
 " Color Schemes
-
-
 
 " nord-theme-overrides
 augroup nord-theme-overrides
